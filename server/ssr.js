@@ -12,11 +12,10 @@ module.exports = function(app) {
         <App />
       </StaticRouter>
     );
-    console.log(renderToString(content));
     var html = `<html>
         <head />
         <body>
-          <div id="app">${content}</div>
+          <div id="root">${content}</div>
           <script src="http://localhost:8081/dist/bundle.js"></script>
         </body>
       </html>`;
